@@ -28,7 +28,11 @@ export const BillCard = ({ amount, dueDate, onPay }: BillCardProps) => {
 
       <View style={styles.footer}>
         <Text style={styles.amount}>{amount}</Text>
-        <TouchableOpacity style={styles.payBtn} activeOpacity={0.8} onPress={onPay}>
+        <TouchableOpacity
+          style={styles.payBtn}
+          activeOpacity={0.8}
+          onPress={onPay}
+        >
           <Text style={styles.payBtnText}>THANH TOÁN NGAY</Text>
         </TouchableOpacity>
       </View>
