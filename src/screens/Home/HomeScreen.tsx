@@ -42,7 +42,7 @@ export const HomeScreen = () => {
 
   return (
     <SafeAreaView style={styles.safe}>
-      <StatusBar barStyle="light-content" backgroundColor="#1A56DB" />
+      <StatusBar barStyle="light-content" backgroundColor="#1B53DC" />
 
       <HomeHeader user={MOCK_USER} onBellPress={handleBellPress} />
 
@@ -87,6 +87,7 @@ export const HomeScreen = () => {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
+    backgroundColor: '#F5F6FA',
   },
   scroll: {
     zIndex: 10,
