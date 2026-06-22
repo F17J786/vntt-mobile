@@ -1,4 +1,2 @@
-export {
-  SearchInvoicesScreen,
-  SearchInvoicesOptions,
-} from './SearchInvoicesScreen';
+export { SearchInvoicesScreen } from './SearchInvoicesScreen';
+export { createScreenOptions } from './createScreenOptions';

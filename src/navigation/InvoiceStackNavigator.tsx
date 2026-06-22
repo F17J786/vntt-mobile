@@ -2,7 +2,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { InvoiceScreen } from '@/screens/Invoices';
 import {
   SearchInvoicesScreen,
-  SearchInvoicesOptions,
+  createScreenOptions,
 } from '@/screens/SearchInvoices';
 //import BillDetailScreen, { billDetailHeaderOptions } from './BillDetailScreen';
 
@@ -15,7 +15,9 @@ export const InvoiceStackNavigator = () => {
       <InvoiceStack.Screen
         name="SearchInvoices"
         component={SearchInvoicesScreen}
-        options={({ navigation }) => SearchInvoicesOptions(navigation)}
+        options={({ navigation }) =>
+          createScreenOptions({ navigation, title: 'Tra cứu giao dịch' })
+        }
       />
       {/* <InvoiceStack.Screen
         name="DeviceList"
